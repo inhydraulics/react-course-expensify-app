@@ -38,14 +38,14 @@ module.exports = (env) => {
 		resolve: { extensions: ["*", ".js", ".jsx"] },
 		devtool: isProduction ? "source-map" : "inline-source-map",
 		output: {
-			path: path.resolve(__dirname, "public"),
+			path: path.resolve(__dirname, "public", "dist"),
 			//publicPath: "/dist/",
 			filename: "bundle.js",
 		},
 		devServer: {
 			contentBase: path.join(__dirname, "public"),
 			port: 3000,
-			//publicPath: "http://localhost:3000/dist/",
+			publicPath: "/dist/",
 			historyApiFallback: true,
 		},
 	};
