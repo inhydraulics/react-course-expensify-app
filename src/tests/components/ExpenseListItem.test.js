@@ -7,7 +7,7 @@ test("should render ExpenseListItem", () => {
 	const wrapper = shallow(
 		<ExpenseListItem
 			description={expenses[0].description}
-			Amount={expenses[0].amount}
+			amount={expenses[0].amount}
             createdAt={expenses[0].createdAt}
             id={expenses[0].id}
 		/>
